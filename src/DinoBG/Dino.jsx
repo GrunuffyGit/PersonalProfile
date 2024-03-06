@@ -4,8 +4,11 @@ import DinoInnerEye from './DinoInnerEye';
 
 const Dino = () => {
     const [isBlushing, setIsBlushing] = useState(false);
-    const handleOnClick = () => {
-        setIsBlushing(!isBlushing);
+    const handleMouseEnter = () => {
+        setIsBlushing(true);
+    }
+    const handleMouseLeave = () => {
+        setIsBlushing(false);
     }
 
     return (
@@ -13,7 +16,7 @@ const Dino = () => {
             <div className='dino-horn'/>
             <div className='dino-horn2'/>
             <div className='dino-horn3'/>
-            <div className='dino-head' onClick={handleOnClick}>
+            <div className='dino-head' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div>
                     <div className='dino-eye-lid'/>
                     <div className='dino-eye eye-R'>
