@@ -26,10 +26,10 @@ const AboutMeSection = () => {
                 </div>
                 <div className='social-links-section cloud-slide-in-delay'>
                     <div className='social-icon-group fade-in'>
-                        <a href='/' target='blank' rel="noopener noreferrer">
+                        <a href='https://github.com/GrunuffyGit' target='blank' rel="noopener noreferrer">
                             <FontAwesomeIcon className='social-icon' icon={faGithub} />
                         </a>
-                        <a href='/' target='blank' rel="noopener noreferrer">
+                        <a href='https://www.linkedin.com/in/gloriatam' target='blank' rel="noopener noreferrer">
                             <FontAwesomeIcon className='social-icon' icon={faLinkedin} />
                         </a>
                         
