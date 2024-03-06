@@ -1,0 +1,122 @@
+.dino-body {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100vw;
+}
+
+.dino-horn {
+    background-color: rgb(1, 48, 1);
+    position: absolute;
+    top: -1rem;
+    height: 13rem;
+    width: 13rem;
+    border-top-right-radius: 8rem;
+    transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+    border-style: solid;
+    border-width: 25px 1px 0px 0px;
+    border-color: rgb(0, 26, 0);
+}
+
+.dino-horn2{
+    background-color: rgb(0, 26, 0);
+    position: relative;
+    top: 4rem;
+    left: -10rem;
+    height: 10rem;
+    width: 10rem;
+    border-top-right-radius: 8rem;
+    transform: rotate(-110deg) skewX(-35deg) scale(1.1,.866);
+}
+
+.dino-horn3{
+    background-color: rgb(0, 26, 0);
+    position: relative;
+    top: 13rem;
+    left: -22.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-top-right-radius: 8rem;
+    transform: rotate(-150deg) skewX(-45deg) scale(1.1,.866);
+}
+
+.dino-head {
+    background-color: rgb(45, 226, 45);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 14rem;
+    width: 35rem;
+    bottom: 0px;
+    border-radius: 110rem 100rem 0 0;
+    border-style: solid;
+    border-width: 15px 10px 0px 40px;
+    border-color: rgb(37, 198, 37);
+}
+
+.dino-blush {
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 2;
+    filter: blur(7px);
+    background-color: rgba(255, 173, 173, 0.869)
+}
+
+.blush-R {
+    top: 6rem;
+    right: 2rem;
+}
+
+.blush-L {
+    top: 6rem;
+    left: 2rem;
+}
+
+.dino-eye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    animation: blinking 5s infinite;
+    z-index: 3;
+}
+
+.dino-inner-eye {
+    width: 3rem; 
+    height: 3.5rem; 
+    border-radius: 100%;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    border-bottom: .5rem solid rgb(255, 255, 255);
+}
+
+.dino-eye-lid{
+    height: .5rem;
+    width: 6rem;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 7rem;
+}
+
+@keyframes blinking {
+    96% {
+        transform: none;
+        animation-timing-function: ease-in;
+      }
+    97.5% {
+        transform: scaleY(0);
+    }
+    100% {
+        animation-timing-function: ease-out;
+    }
+}
