@@ -2,7 +2,7 @@ import { useRef } from "react";
 import useMousePosition from "./useMousePosition";
 
 const DinoInnerEye = () => {
-    const eye = useRef(null);
+    const eye = useRef();
     const {x, y} = useMousePosition();
 
     const xAxis = document.body.offsetWidth/2;
